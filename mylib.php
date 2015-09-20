@@ -11,12 +11,13 @@ else {
 $items = '';
 }
 
+if(!is_null($myEmptyList)){
 $myEmptyList = array_filter($myEmptyList);
 echo "<br>Unsorted list:<br>";
 print_r($myEmptyList);
 echo "<br>";
 return $myEmptyList;
-
+}
 }
 
 //Sorts array and prints it.
